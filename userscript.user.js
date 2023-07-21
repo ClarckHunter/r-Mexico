@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         r/Mexico Template
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the canvas!
 // @author       Gerardo Pastor
 // @match        https://hot-potato.reddit.com/embed*
@@ -14,7 +14,7 @@ if (window.top !== window.self) {
         (function () {
             const i = document.createElement("img");
             i.src = "https://raw.githubusercontent.com/Gerardo-Pastor/MexicoPlace/main/MexicoFTW_template.png";
-            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 500px;height: 500px;";
+            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
             console.log(i);
             return i;
         })())
